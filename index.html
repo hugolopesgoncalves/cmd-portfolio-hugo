@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio Terminal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="terminal">
+    
+    <!-- ASCII ART -->
+    <pre id="ascii">
+ __    _____ _____ _____ _____     _____ _____ _____ _____ _____ __    _____ _____ _____     _____ _____ _____ _____ 
+|  |  |     |  _  |   __|   __|___|   __|     |   | |     |  _  |  |  |  |  |   __|   __|___|  |  |  |  |   __|     |
+|  |__|  |  |   __|   __|__   |___|  |  |  |  | | | |   --|     |  |__|  |  |   __|__   |___|     |  |  |  |  |  |  |
+|_____|_____|__|  |_____|_____|   |_____|_____|_|___|_____|__|__|_____|\___/|_____|_____|   |__|__|_____|_____|_____|
+    </pre>
+
+    <!-- Premier texte affiché -->
+    <p class="first_text">tapper <span class="cmd-vert">"help"</span> pour afficher la liste des commandes</p>
+    
+    <!-- Résultats des commandes, agit comme un historique-->
+    <div id="output"></div>
+
+    <!-- Ligne de commande -->
+    <div class="command-line">
+      <span class="prompt">@LOPESGONCALVES-Hugo/portfolio:$</span>
+      <input type="text" id="input" autofocus />
+    </div>
+
+    <!-- Réponse de la commande "help" -->
+    <div id="help-response" style="display: none;">
+<br>Commandes disponibles : <br>
+<!-- -->• <span class="cmd-vert">help</span> - list of available commands
+<!-- -->• <span class="cmd-vert">about</span> - introduction of me
+<!-- -->• <span class="cmd-vert">skills</span> - list of technologies I have worked with
+<!-- -->• <span class="cmd-vert">contact</span> - contact information
+<!-- -->• <span class="cmd-vert">projects</span> - list of projects
+<!-- -->• <span class="cmd-vert">clear</span> - clear the terminal
+    </div>
+
+    <!-- Réponse de la commande "about" -->
+    <div id="about-response" style="display: none;">
+<!-- --><br>ici j'ecrirai une desciption pro/hobies/etudes...<br>
+<!-- -->Curriculum-vitæ : <span class="cmd-rose">LOPESGONCALVESHUGO_CV.pdf</span>
+<!-- --><br>tapper open <span class="cmd-rose">[file-name]</span> pour ouvrir un fichier dans un nouvel onglet
+    </div>
+
+    <!-- Réponse de la commande "skills" -->
+    <div id="skills-response" style="display: none;">
+<!-- --><br>ici, j'écrirais mes compétences quand j'aurai du temps
+    </div>
+
+    <!-- Réponse de la commande "contact" -->
+    <div id="contact-response" style="display: none;">
+<!-- --><br></b><span class="cmd-rose">linkedin</span> mettre le lien de mon linkedin
+<!-- --><span class="cmd-rose">github</span> mettre le lien de mon github
+<!-- --><span class="cmd-rose">email</span> contact.hugolopesgoncalves@gmail.com <br>
+<!-- -->tapper open <span class="cmd-rose">[link-name]</span> pour ouvir le lien dans un nouvel onglet
+    </div>
+
+    <!-- Réponse de la commande "projects" -->
+    <div id="projects-response" style="display: none;">
+<!-- --><br>ici, je ferai une liste de mes projects<br>
+<!-- -->tapper open <span class="cmd-rose">[file-name]</span> pour ouvrir un le compte rendu d'un projet dans un nouvel onglet
+    </div>
+
+    </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
